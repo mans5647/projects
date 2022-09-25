@@ -47,12 +47,12 @@ namespace Calc
 			{
 					c = Math.Sqrt(a);
 					Console.WriteLine("result (sqrt) " +c);
-					Console.WriteLine("Do you want perform sqrt action with B ? (y/n) ");
+					Console.Write("Do you want perform sqrt action with B ? (y/n): ");
 					string asrt = Console.ReadLine();
 					if (asrt == "y" || asrt == "yes" || asrt == "Yes")
 					{
 						double c1 = Math.Sqrt(b);
-						Console.WriteLine("result (sqrt) with b" +c1);
+						Console.WriteLine("result (sqrt) with b " +c1);
 					} else if (asrt == "n" || asrt == "no" || asrt == "No")
 					{
 						continue;
@@ -64,7 +64,7 @@ namespace Calc
 					a = a * 1;
 					c = a;
 					Console.WriteLine("result (percent) from a % = " +c);
-					Console.Write("Do you want perform 1 percent action with B ? (y/n) ");
+					Console.Write("Do you want perform 1 percent action with B ? (y/n): ");
 					string asrt1 = Console.ReadLine();
 					if (asrt1 == "y" || asrt1 == "yes" || asrt1 == "Yes")
 					{      
