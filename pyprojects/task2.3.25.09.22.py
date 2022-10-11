@@ -1,3 +1,5 @@
+usage_msg = '''A simple weekday difinitor. 1 - monday, 2 - tuesday, 3 - wednesday, 4 - thursday, 5 - friday, 6 - saturday, 7 - sunday. Info will be putted into screen'''
+print(usage_msg, "\n")
 wd = int(input("Enter day of week: ")) # entering day of week number
 
 match wd: # entering to match_case
@@ -15,4 +17,5 @@ match wd: # entering to match_case
         print("Saturday") #                               |
     case 7: # if 7 from wd input                          |
         print("Sunday") #_________________________________+
-    
+    case _:
+        print("Day is not determined.")
