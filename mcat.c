@@ -13,6 +13,7 @@ void error(char arg[])
     exit(EXIT_FAILURE);
 }
 void redirect(char arg[]);
+void concat(char arg[], char arg2[], char arg3[]);
 /*
 */
 int main(int argc, char **argv)
@@ -63,6 +64,25 @@ int main(int argc, char **argv)
         }
         redirect(argv[2]);
     }
+    else if (!strcmp(argv[1], "-c") || !strcmp(argv[1], "--concat"))
+    {
+        if (argc <= 2)
+        {
+            error(argv[1]);
+        }
+        else if (argc <=3)
+        {
+            fprintf(stderr, "%s :%s: One file is not enough\n", NAME, argv[1]);
+            exit(EXIT_FAILURE);
+        }
+        else if (argc <=4)
+        {
+            fprintf(stderr,"%s: %s: File-destination needed\n", NAME, argv[1]);
+            exit(EXIT_FAILURE);
+        }
+        else 
+            concat(argv[2],argv[3],argv[4]);
+    }
     return 0;
 }
 void redirect(char arg[])
@@ -81,5 +101,38 @@ void redirect(char arg[])
         }
     }
     fclose(writeto);
+    exit(EXIT_SUCCESS);
+}
+void concat(char arg[], char arg2[], char arg3[])
+{
+    FILE * fp1;
+    FILE * fp2;
+    FILE * fp3;
+    fp1 = fopen(arg, "r");
+    fp2 = fopen(arg2, "r");
+    fp3 = fopen(arg3, "w+");
+    char ch;
+    if (fp1 == NULL)
+    {
+        fprintf(stderr, "%s: %s: No such file or directory\n", NAME, arg);
+        exit(EXIT_FAILURE);
+    }
+    else if (fp2 == NULL )
+    {
+        fprintf(stderr, "%s: %s: No such file or directory\n", NAME, arg2);
+        exit(EXIT_FAILURE);
+    }
+    else if (fp1 == NULL && fp2 == NULL)
+    {
+        fprintf(stderr, "%s: %s, %s: Specified files not found\n", NAME, arg,arg2);
+        exit(EXIT_FAILURE);
+    }
+    while ((ch = fgetc(fp1)) != EOF)
+        fputc(ch, fp3);
+    while ((ch = fgetc(fp2)) != EOF)
+        fputc(ch, fp3);
+    fclose(fp1);
+    fclose(fp2);
+    fclose(fp3);
     exit(EXIT_SUCCESS);
 }
