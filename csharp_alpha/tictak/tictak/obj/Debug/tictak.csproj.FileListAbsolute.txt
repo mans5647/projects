@@ -1,0 +1,16 @@
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\bin\Debug\tictak.exe.config
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\bin\Debug\tictak.exe
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\bin\Debug\tictak.pdb
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.csproj.AssemblyReference.cache
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.csproj.SuggestedBindingRedirects.cache
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\MainWindow.g.cs
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\App.g.cs
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak_MarkupCompile.cache
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak_MarkupCompile.lref
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\MainWindow.baml
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.g.resources
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.Properties.Resources.resources
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.csproj.GenerateResource.cache
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.csproj.CoreCompileInputs.cache
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.exe
+C:\Users\mansu\tests\csharp_alpha\tictak\tictak\obj\Debug\tictak.pdb

@@ -1,0 +1,1 @@
+C:\Users\mansu\tests\csharp_alpha\curl_get\curl_get\x64\Debug\curl_get.vcxproj.CopyComplete
