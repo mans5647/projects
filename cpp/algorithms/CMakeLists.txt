@@ -1,4 +1,0 @@
-CMAKE_MINIMUM_REQUIRED_VERSION(VERSION 3.26.0)
-set(CMAKE_CXX_STANDARD 17)
-project(algorithms VERSION 0.1.0)
-add_executable(p2 p2.cpp)
