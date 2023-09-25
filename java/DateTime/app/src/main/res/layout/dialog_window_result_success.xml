@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/pretty">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:gravity="center"
+                android:text="Wait for it..."
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:text="You have been enrolled to daily meeting! Information message will be sent in personal chat"
+                android:textColor="@color/black">
+
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="150dp"
+
+                android:src="@drawable/check_mark">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/closeBtnSuccessWindow"
+                android:layout_width="200dp"
+                android:text="GOT IT"
+                android:textSize="20dp"
+                android:layout_height="50dp"></Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

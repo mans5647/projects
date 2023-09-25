@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/pretty"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <Spinner
+                android:id="@+id/spH"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spM"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="30dp">
+
+            </Spinner>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/h_setter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="---"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="hours"
+                android:textSize="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:paddingTop="18dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/m_setter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="---"
+                android:textSize="30dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="mins"
+                android:textSize="20dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:paddingTop="18dp">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/applyTime"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_style"
+                android:text="Apply"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

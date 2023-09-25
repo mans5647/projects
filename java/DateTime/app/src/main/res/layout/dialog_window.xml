@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@drawable/pretty">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            >
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:paddingTop="10dp"
+                android:text="Continue with this date?"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/orderDetailsText"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="40dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/yesBut"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="YES"
+                android:textSize="20dp">
+
+            </Button>
+            <Button
+                android:id="@+id/noBut"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="180dp"
+                android:text="NO"
+                android:textSize="20dp"
+                >
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
